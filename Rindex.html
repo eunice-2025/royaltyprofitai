@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXCLUSIVE BONUS: The AI Royalty Accelerator for Royalty Profits AI</title>
+    <style>
+        :root {
+            --color-bg: #000000;
+            --color-text-light: #ffffff;
+            --color-neon-yellow: #faff00;
+            --color-neon-green: #00ff88;
+            --color-cta-start: #ff8c00; /* Darker Orange for Gradient */
+            --color-cta-end: #ffcc00; /* Brighter Yellow for Gradient */
+            --color-border: #333333;
+            --font-primary: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-light);
+            font-family: var(--font-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Header & Hero Section --- */
+        .header {
+            background-color: #111;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--color-neon-yellow);
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--color-neon-yellow);
+            text-shadow: 0 0 10px var(--color-neon-yellow);
+            margin-bottom: 10px;
+        }
+        .logo span {
+            color: var(--color-neon-green);
+            text-shadow: 0 0 10px var(--color-neon-green);
+        }
+
+        .hero-headline {
+            font-size: 2.8em;
+            font-weight: 900;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            color: var(--color-neon-yellow);
+            text-shadow: 0 0 15px rgba(255, 255, 0, 0.8);
+            line-height: 1.1;
+        }
+
+        .hero-subheadline {
+            font-size: 1.4em;
+            color: var(--color-neon-green);
+            text-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
+            margin-bottom: 30px;
+        }
+
+        /* --- Countdown Timer --- */
+        .timer-box {
+            background-color: #1a1a1a;
+            border: 3px solid var(--color-neon-green);
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 0 20px var(--color-neon-green);
+        }
+        .timer-box p {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--color-text-light);
+            margin-bottom: 10px;
+        }
+        #countdown {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--color-neon-yellow);
+            text-shadow: 0 0 15px var(--color-neon-yellow);
+        }
+
+        /* --- CTA Button Animation --- */
+        .cta-button {
+            display: block;
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px 30px;
+            font-size: 1.6em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: #000000;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(90deg, var(--color-cta-start) 0%, var(--color-cta-end) 100%);
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+            transition: all 0.3s ease;
+            animation: pulse 1.5s infinite;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 204, 0, 1);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        /* --- Product & Bonus Sections --- */
+        .section-title {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: var(--color-neon-green);
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px var(--color-neon-green);
+        }
+
+        .product-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .product-features li {
+            background-color: #111;
+            padding: 15px;
+            border-left: 4px solid var(--color-neon-yellow);
+            font-size: 1.1em;
+            box-shadow: 0 0 5px rgba(255, 255, 0, 0.4);
+        }
+
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .bonus-item {
+            background-color: #111;
+            padding: 20px;
+            border: 2px solid var(--color-neon-green);
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+            text-align: center;
+        }
+
+        .bonus-item h3 {
+            color: var(--color-neon-yellow);
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-shadow: 0 0 5px var(--color-neon-yellow);
+        }
+
+        .bonus-item .value {
+            color: var(--color-neon-green);
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .bonus-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            /* Added a temporary style to make the placeholder visible */
+            min-height: 150px; 
+            background-color: #333; 
+            border: 1px dashed var(--color-neon-yellow);
+        }
+
+        /* --- FAQ Section --- */
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #0a0a0a;
+            border-left: 3px solid var(--color-neon-green);
+        }
+        .faq-item h4 {
+            color: var(--color-neon-yellow);
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.9em;
+            color: #888;
+        }
+        .footer a {
+            color: var(--color-neon-green);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <p class="logo">ROYALTY PROFITS <span>AI</span></p>
+            <h1 class="hero-headline">The AI Royalty Accelerator: Unlock Royalty Profits AI and Claim Our 6-Part Bonus Blueprint to Guarantee Your First Passive Income Stream.</h1>
+            <p class="hero-subheadline">Exclusive Bonuses from **Eunice M** – The Only Way to Turn AI Content into Guaranteed Global Royalties.</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Countdown Timer -->
+        <div class="timer-box">
+            <p>⚠️ **WARNING: This Exclusive Bonus Package Expires In...**</p>
+            <div id="countdown"></div>
+        </div>
+
+        <!-- Primary CTA -->
+        <a href="https://warriorplus.com/o2/a/jn3hg5c/0" class="cta-button">
+            YES! I Want Royalty Profits AI + All 6 Bonuses Now!
+        </a>
+
+        <!-- Product Sales Copy -->
+        <h2 class="section-title">Royalty Profits AI: The World's FIRST 6-Minute Book System</h2>
+        <p style="text-align: center; font-size: 1.1em; max-width: 800px; margin: 0 auto 30px;">
+            Royalty Profits AI is the breakthrough system that creates, optimizes, and publishes profitable Amazon KDP books in under 6 minutes. It eliminates the need for writing, editing, or complex formatting, allowing you to flood the market with high-quality, niche-specific content and earn passive royalty income month after month.
+        </p>
+
+        <ul class="product-features">
+            <li>✅ **6-Minute Creation:** Generate a complete, formatted book ready for KDP in less than the time it takes to brew coffee.</li>
+            <li>✅ **25+ Niche Coverage:** Tap into high-demand, low-competition niches for guaranteed sales.</li>
+            <li>✅ **Proven Passive Income:** Built on a system that has generated real, verifiable royalty results.</li>
+            <li>✅ **Zero Writing Required:** Leverage powerful AI models to do all the heavy lifting, from outline to final EPUB/PDF.</li>
+        </ul>
+
+        <!-- Bonus Stack Overview -->
+        <h2 class="section-title" style="color: var(--color-neon-yellow);">Your Exclusive Bonus Stack: The 6-Part Blueprint for KDP Domination</h2>
+        <p style="text-align: center; font-size: 1.3em; font-weight: bold; color: var(--color-neon-green);">
+            TOTAL VALUE: $582.00 – Yours FREE Today!
+        </p>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+            Royalty Profits AI gives you the engine. Our exclusive 6-part bonus stack gives you the fuel, the map, and the viral marketing blueprint. This is the complete system for turning a single AI-generated book into a global, passive income asset.
+        </p>
+
+        <!-- Individual Bonus Breakdown -->
+        <div class="bonus-grid">
+            
+            <!-- Bonus 1 -->
+            <div class="bonus-item">
+                <img src="image01.png" alt="KDP Keyword Goldmine Cheat Sheet">
+                <h3>1. KDP Keyword Goldmine Cheat Sheet</h3>
+                <p class="value">$97.00 Value</p>
+                <p>Stop guessing what buyers search for. This cheat sheet gives you the exact 3-step process to find high-traffic, low-competition keywords that guarantee your book is found and bought on Amazon KDP.</p>
+            </div>
+
+            <!-- Bonus 2 -->
+            <div class="bonus-item">
+                <img src="image02.png" alt="API Cost-Saving Blueprint">
+                <h3>2. Royalty Profits AI API Cost-Saving Blueprint</h3>
+                <p class="value">$77.00 Value</p>
+                <p>Maximize your profits by minimizing your costs. This blueprint reveals the exact settings and strategies to reduce your AI API usage fees by up to 70%, ensuring every book you publish is highly profitable from day one.</p>
+            </div>
+
+            <!-- Bonus 3 -->
+            <div class="bonus-item">
+                <img src="image03.png" alt="100 Niche Starters">
+                <h3>3. 100 High-Profit, Low-Competition Niche Starters</h3>
+                <p class="value">$87.00 Value</p>
+                <p>Never waste time on a dead niche again. This curated list gives you 100 proven, untapped niches that are perfect for AI-generated content, guaranteeing high demand and minimal competition for your books.</p>
+            </div>
+
+            <!-- Bonus 4 -->
+            <div class="bonus-item">
+                <img src="image04.png" alt="Global Publishing Checklist">
+                <h3>4. "Beyond Amazon" Global Publishing Checklist</h3>
+                <p class="value">$97.00 Value</p>
+                <p>Don't leave 60% of the global market on the table. This checklist shows you how to instantly distribute your AI-generated files to Apple, Kobo, Libraries, and Bookstores, multiplying your passive income streams worldwide.</p>
+            </div>
+
+            <!-- Bonus 5 -->
+            <div class="bonus-item">
+                <img src="image05.png" alt="Video Script Template">
+                <h3>5. The 5-Minute Book Launch Video Script Template</h3>
+                <p class="value">$127.00 Value</p>
+                <p>Go viral in 60 seconds. Use this fill-in-the-blanks script to create high-impact videos for TikTok, Reels, and Shorts, driving thousands of free, targeted buyers directly to your Amazon KDP page with minimal effort.</p>
+            </div>
+
+            <!-- Bonus 6 -->
+            <div class="bonus-item">
+                <img src="image06.png" alt="Cover Design Prompt Vault">
+                <h3>6. AI Cover Design Prompt Vault (30+ Prompts)</h3>
+                <p class="value">$97.00 Value</p>
+                <p>Stop getting generic AI art. This vault gives you the exact, structured prompts to force your AI to create professional, high-converting covers that look like they were designed by a \$500 expert, ensuring maximum click-throughs.</p>
+            </div>
+        </div>
+
+        <!-- Final CTA -->
+        <h2 class="section-title" style="color: var(--color-neon-yellow); margin-top: 60px;">How To Claim Your Exclusive Bonuses</h2>
+        <p style="text-align: center; font-size: 1.1em; max-width: 800px; margin: 0 auto 30px;">
+            Simply click the button below to purchase Royalty Profits AI. Once you complete your purchase, your bonuses will be automatically delivered inside your WarriorPlus account.
+        </p>
+        <a href="https://warriorplus.com/o2/a/jn3hg5c/0" class="cta-button">
+            Click Here to Secure Royalty Profits AI + All 6 Bonuses Now!
+        </a>
+
+        <!-- FAQ Section -->
+        <h2 class="section-title">Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-item">
+            <h4>Q: Who is Eunice M and why are these bonuses exclusive?</h4>
+            <p>A: Eunice M is an affiliate partner who has created this custom, high-value bonus stack specifically for her audience. These bonuses are designed to fill the gaps in the core product, focusing on advanced keyword research, cost-saving, and viral marketing—content you won't find anywhere else.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Q: How do I get access to the bonuses?</h4>
+            <p>A: After purchasing Royalty Profits AI through the link on this page, your bonuses will be instantly available inside your WarriorPlus purchase area. Look for the blue button labeled "Access Your Exclusive Bonuses Here."</p>
+        </div>
+        <div class="faq-item">
+            <h4>Q: What if I already bought Royalty Profits AI?</h4>
+            <p>A: Unfortunately, these bonuses are only available to new customers who purchase Royalty Profits AI through Eunice M's affiliate link on this page. Please ensure you clear your cookies before clicking the CTA button to guarantee credit.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Exclusive Bonuses from Eunice M. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Disclaimer</a></p>
+        <p>Powered by <a href="https://warriorplus.com/o2/a/fd0jtrx/0" target="_blank">Bonus Builder AI</a></p>
+    </div>
+
+    <script>
+        // Set the date we're counting down to (December 5, 2025, 11:59:59 PM EST)
+        const countDownDate = new Date("Dec 5, 2025 23:59:59 EST").getTime();
+
+        // Update the count down every 1 second
+        const x = setInterval(function() {
+
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            const distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "BONUS EXPIRED";
+                document.querySelector('.timer-box').style.backgroundColor = '#440000';
+                document.querySelector('.timer-box').style.borderColor = 'red';
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
